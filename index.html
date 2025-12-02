@@ -1,0 +1,130 @@
+<!-- Save this part as: index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Amahle Mokoena — Portfolio</title>
+  <meta name="description" content="Portfolio of Amahle Mokoena — projects, skills and contact." />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons (uses kit or CDN) -->
+  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#">Amahle Mokoena</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="btn" href="resume.pdf" target="_blank">Resume</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="toggle navigation">☰</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container hero-inner">
+      <div class="hero-left">
+        <h1>Hi, I'm <span class="accent">Amahle Mokoena</span></h1>
+        <p class="lead">A passionate developer &amp; engineer building clean, accessible web experiences.</p>
+        <p class="social">
+          <a href="#" aria-label="GitHub (placeholder)"><i class="fa fa-github"></i> GitHub</a>
+          <a href="#" aria-label="LinkedIn (placeholder)"><i class="fa fa-linkedin"></i> LinkedIn</a>
+          <a href="#" aria-label="Email"><i class="fa fa-envelope"></i> Email</a>
+        </p>
+      </div>
+      <div class="hero-right">
+        <!-- image placeholder -->
+        <img src="assets/img/placeholder-profile.png" alt="Profile placeholder" class="profile-img">
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About</h2>
+      <p>Hello — I'm Amahle. Short bio goes here. Replace this paragraph with a short summary of your background, interests and the kind of work you do.</p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section alt">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="grid">
+        <!-- Project card (duplicate as needed) -->
+        <article class="card">
+          <img src="assets/img/placeholder-project.png" alt="Project placeholder">
+          <div class="card-body">
+            <h3>Project One</h3>
+            <p class="muted">Short description of the project. Tech: HTML, CSS, JS</p>
+            <p class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/img/placeholder-project.png" alt="Project placeholder">
+          <div class="card-body">
+            <h3>Project Two</h3>
+            <p class="muted">Short description of the project. Tech: Python, Flask</p>
+            <p class="tags"><span>Python</span><span>Flask</span></p>
+          </div>
+        </article>
+
+        <!-- Add more cards as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML &amp; CSS</li>
+        <li>JavaScript</li>
+        <li>React (optional)</li>
+        <li>Python</li>
+        <li>APIs &amp; DevOps basics</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section alt">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+      <p>Phone: <a href="tel:+27710000000">+27 71 000 0000</a></p>
+      <p>Location: City, Country (placeholder)</p>
+      <p>GitHub: <a href="#">github.com/yourusername</a> — LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year">2025</span> Amahle Mokoena — Built with ❤️</p>
+    </div>
+  </footer>
+
+  <script>
+    // small JS for nav toggle and current year
+    document.querySelector('.nav-toggle').addEventListener('click', function(){
+      document.querySelector('.nav-links').classList.toggle('open');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+ 
