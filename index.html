@@ -1,4 +1,3 @@
-<!-- Save this part as: index.html -->
 <!doctype html>
 <html lang="en">
 <head>
@@ -7,13 +6,14 @@
   <title>Amahle Mokoena — Portfolio</title>
   <meta name="description" content="Portfolio of Amahle Mokoena — projects, skills and contact." />
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <!-- Font Awesome for icons (uses kit or CDN) -->
-  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
-
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
   <!-- Main stylesheet -->
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- NAVIGATION -->
@@ -25,9 +25,11 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a class="btn" href="resume.pdf" target="_blank">Resume</a></li>
+        <li><a class="btn" href="resume.pdf" target="_blank"><span>Resume</span></a></li>
       </ul>
-      <button class="nav-toggle" aria-label="toggle navigation">☰</button>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
     </div>
   </nav>
 
@@ -37,15 +39,22 @@
       <div class="hero-left">
         <h1>Hi, I'm <span class="accent">Amahle Mokoena</span></h1>
         <p class="lead">A passionate developer &amp; engineer building clean, accessible web experiences.</p>
-        <p class="social">
-          <a href="#" aria-label="GitHub (placeholder)"><i class="fa fa-github"></i> GitHub</a>
-          <a href="#" aria-label="LinkedIn (placeholder)"><i class="fa fa-linkedin"></i> LinkedIn</a>
-          <a href="#" aria-label="Email"><i class="fa fa-envelope"></i> Email</a>
-        </p>
+        
+        <div class="social">
+          <a href="#" aria-label="GitHub">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="#" aria-label="Email">
+            <i class="fas fa-envelope"></i> Email
+          </a>
+        </div>
       </div>
       <div class="hero-right">
-        <!-- image placeholder -->
-        <img src="assets/img/placeholder-profile.png" alt="Profile placeholder" class="profile-img">
+        <!-- Replace with your actual profile image -->
+        <img src="assets/img/placeholder-profile.png" alt="Amahle Mokoena Profile" class="profile-img">
       </div>
     </div>
   </header>
@@ -53,7 +62,7 @@
   <!-- ABOUT -->
   <section id="about" class="section">
     <div class="container">
-      <h2>About</h2>
+      <h2>About Me</h2>
       <p>Hello — I'm Amahle. Short bio goes here. Replace this paragraph with a short summary of your background, interests and the kind of work you do.</p>
     </div>
   </section>
@@ -61,28 +70,47 @@
   <!-- PROJECTS -->
   <section id="projects" class="section alt">
     <div class="container">
-      <h2>Projects</h2>
+      <h2>Featured Projects</h2>
       <div class="grid">
-        <!-- Project card (duplicate as needed) -->
+        <!-- Project card 1 -->
         <article class="card">
-          <img src="assets/img/placeholder-project.png" alt="Project placeholder">
+          <img src="assets/img/placeholder-project.png" alt="Project One">
           <div class="card-body">
             <h3>Project One</h3>
             <p class="muted">Short description of the project. Tech: HTML, CSS, JS</p>
-            <p class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></p>
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
           </div>
         </article>
 
+        <!-- Project card 2 -->
         <article class="card">
-          <img src="assets/img/placeholder-project.png" alt="Project placeholder">
+          <img src="assets/img/placeholder-project.png" alt="Project Two">
           <div class="card-body">
             <h3>Project Two</h3>
             <p class="muted">Short description of the project. Tech: Python, Flask</p>
-            <p class="tags"><span>Python</span><span>Flask</span></p>
+            <div class="tags">
+              <span>Python</span>
+              <span>Flask</span>
+            </div>
           </div>
         </article>
 
-        <!-- Add more cards as needed -->
+        <!-- Project card 3 - Add more as needed -->
+        <article class="card">
+          <img src="assets/img/placeholder-project.png" alt="Project Three">
+          <div class="card-body">
+            <h3>Project Three</h3>
+            <p class="muted">Short description of the project. Tech: React, Node</p>
+            <div class="tags">
+              <span>React</span>
+              <span>Node.js</span>
+            </div>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -90,13 +118,14 @@
   <!-- SKILLS -->
   <section id="skills" class="section">
     <div class="container">
-      <h2>Skills</h2>
+      <h2>Skills &amp; Expertise</h2>
       <ul class="skills-list">
         <li>HTML &amp; CSS</li>
         <li>JavaScript</li>
-        <li>React (optional)</li>
+        <li>React</li>
         <li>Python</li>
-        <li>APIs &amp; DevOps basics</li>
+        <li>APIs &amp; DevOps</li>
+        <li>UI/UX Design</li>
       </ul>
     </div>
   </section>
@@ -104,27 +133,52 @@
   <!-- CONTACT -->
   <section id="contact" class="section alt">
     <div class="container">
-      <h2>Contact</h2>
+      <h2>Get In Touch</h2>
       <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
       <p>Phone: <a href="tel:+27710000000">+27 71 000 0000</a></p>
       <p>Location: City, Country (placeholder)</p>
-      <p>GitHub: <a href="#">github.com/yourusername</a> — LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
+      <p>
+        <a href="#">github.com/yourusername</a> · 
+        <a href="#">linkedin.com/in/yourprofile</a>
+      </p>
     </div>
   </section>
 
   <footer class="footer">
     <div class="container">
-      <p>© <span id="year">2025</span> Amahle Mokoena — Built with ❤️</p>
+      <p>© <span id="year">2025</span> Amahle Mokoena · Designed with ❤️</p>
     </div>
   </footer>
 
   <script>
-    // small JS for nav toggle and current year
-    document.querySelector('.nav-toggle').addEventListener('click', function(){
-      document.querySelector('.nav-links').classList.toggle('open');
+    // Navigation toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
     });
+    
+    // Close mobile menu when clicking a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+      });
+    });
+    
+    // Update year
     document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Smooth scroll behavior for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
   </script>
 </body>
 </html>
- 
