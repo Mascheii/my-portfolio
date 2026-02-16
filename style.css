@@ -157,6 +157,12 @@ body {
   z-index: 1;
 }
 
+/* Add spacing between project action buttons and the tag list */
+.card-body .btn {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
 .nav-toggle {
   display: none;
   background: none;
